@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<form name="form">
+    <div class="calculator">
+         <h4>calculator</h4>
+         <input name="input" id="input" class="input" type="text" disabled="disabled" placeholder="0">
+
+        <div class="buttons">
+             <input type="button" name="btnC" id="btnC" value="C" onClick="clearInput()">
+        </div>
+
+         <div class="buttons">
+            <input type="button" name="btn9" id="btn9" value="9" onClick="getValueBtn(btn9.value)">
+            <input type="button" name="btn8" id="btn8" value="8" onClick="getValueBtn(btn8.value)">
+            <input type="button" name="btn7" id="btn7" value="7" onClick="getValueBtn(btn7.value)">
+            <input type="button" name="btnPlus" id="btnPlus" value="+" onClick="getValueBtn(btnPlus.value)">
+        </div>
+
+         <div class="buttons">
+           <input type="button" name="btn6" id="btn6" value="6" onClick="getValueBtn(btn6.value)">
+            <input type="button" name="btn5" id="btn5" value="5" onClick="getValueBtn(btn5.value)">
+            <input type="button" name="btn4" id="btn4" value="4" onClick="getValueBtn(btn4.value)">
+            <input type="button" name="btnMinus" id="btnMinus" value="-" onClick="getValueBtn(btnMinus.value)">
+        </div>
+
+         <div class="buttons">
+            <input type="button" name="btn3" id="btn3" value="3" onClick="getValueBtn(btn3.value)">
+            <input type="button" name="btn2" id="btn2" value="2" onClick="getValueBtn(btn2.value)">
+            <input type="button" name="btn1" id="btn1" value="1" onClick="getValueBtn(btn1.value)">
+            <input type="button" name="btnMultipe" id="btnMultipe" value="&times;" onClick="getValueBtn('*')">
+        </div>
+
+          <div class="buttons">
+            <input type="button" name="btnPoint" id="btnPoint" value="." onClick="getValueBtn(btnPoint.value)">
+            <input type="button" name="btn0" id="btn0" value="0" onClick="getValueBtn(btn0.value)">
+            <input type="button" name="btnEqual" id="btnEqual" value="=" onClick="getTotal()">
+            <input type="button" name="btnDivide" id="btnDivide" value="&divide;" onClick="getValueBtn('/')">
+        </div>
+	</div>
+</form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+ 
